@@ -1,0 +1,31 @@
+<% if(user === 'admin') { %>
+
+    <div class="login-container" id="admin-add-product">
+        <form action="/admin/add-item" method="POST">
+            <label>Nume produs: <input type="text" name="produs" required></label><br>
+            <label>Preț: <input type="real" name="pret" required></label><br><br>
+            <button type="submit">Adaugă produs nou</button>
+        </form> 
+    </div>
+
+    <% if(db) { %>
+        <table id="product-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nume produs</th>
+                    <th>Preț</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% db.forEach(produs => { %>
+                    <tr>
+                        <td> <%= produs.id %> </td>
+                        <td> <%= produs.nume %> </td>
+                        <td> <%= produs.pret %> </td>
+                    </tr>
+                <% }); %> 
+            </tbody>
+        </table>
+    <% } %>
+<% } %>

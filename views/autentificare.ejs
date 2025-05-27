@@ -1,0 +1,12 @@
+
+<div class="login-container" id="login-page">
+    <% if(eroare) { %>
+        <p style="color: red;"> <%= eroare %> </p>
+    <% } %>
+    
+    <form action="/verificare-autentificare" id="login-form" method="POST">
+        <label>Utilizator: <input type="text" name="user" required></label><br>
+        <label>Parola: <input type="password" name="pass" required></label><br>
+        <button>Autentificare</button>
+    </form>
+</div>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/stil.css">
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <div class="logo">
+                    <a href="/">MAGAZIN TELEFOANE</a>
+                </div>
+                <div class="actions">
+                    <% if (user) { %>
+                        <span>Autentificat ca <%= user %></span>
+                        <a href="/vizualizare-cos" id="view-cart">Vizualizare coș</a>
+                        <a href="/deconectare">Logout</a>
+                    <% } else { %>
+                        <a href="autentificare">Log in</a>
+                    <% } %>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="navbar">
+                <a href="/">Acasă</a>
+                <% if (user) { %>
+                    <a href="/chestionar">Chestionar</a>
+                    <% if(user === "admin") {%>
+                        <a href="/admin">Adaugă produs</a>
+                    <% } %>
+                <% } %>
+            </div>
+            <%- body %>
+        </main>
+        <footer>
+            <p>&copy; 2025 Magazin Telefoane</p>
+        </footer>
+    </body>
+</html>

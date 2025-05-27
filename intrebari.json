@@ -1,0 +1,57 @@
+[
+    {
+        "intrebare": "Care este cel mai utilizat sistem de operare pentru telefoane mobile?",
+        "variante": ["Android", "iOS", "HarmonyOS", "BlackberryOS"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Ce influențează cel mai mult performanța unui telefon?",
+        "variante": ["Culoarea", "Procesorul", "Ambalajul", "Numărul de camere"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Ce brand este cunoscut pentru telefoane premium?",
+        "variante": ["Xiaomi", "Huawei", "Apple", "Motorola"],
+        "corect": 2
+    },
+    {
+        "intrebare": "Ce înseamnă 5G?",
+        "variante": ["Internet mai rapid", "Cameră de 5 MP", "Noul tip de Wi-Fi", "Ecran curbat"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Ce trebuie verificat înainte de a vinde un telefon?",
+        "variante": ["Dacă are husă", "Culoarea butoanelor", "Prezența ambalajului original", "Funcționalitatea și aspectul fizic"],
+        "corect": 3
+    },
+    {
+        "intrebare": "Ce este tehnologia AMOLED?",
+        "variante": ["Tip de baterie", "Tip de ecran", "Tip de cameră", "Tip de procesor"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Ce telefon este pliabil?",
+        "variante": ["Nokia 3310", "iPhone 14", "Poco X5", "Samsung Galaxy Fold"],
+        "corect": 3
+    },
+    {
+        "intrebare": "Ce influențează performanța telefonului în jocuri?",
+        "variante": ["Procesorul", "GPS-ul", "LED-ul de notificări", "Camera foto"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Ce înseamnă \"telefon recondiționat\"?",
+        "variante": [
+            "Telefon folosit, dar verificat și reparat",
+            "Telefon nou în ambalaj",
+            "Telefon sigilat",
+            "Telefon cu defecte"
+        ],
+        "corect": 0
+    },
+    {
+        "intrebare": "Unde poți vinde un telefon vechi?",
+        "variante": ["OLX", "Kaufland", "Bancă", "Piață"],
+        "corect": 0
+    }
+]

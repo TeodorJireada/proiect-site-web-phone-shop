@@ -1,0 +1,16 @@
+<h2>Chestionar despre telefoane</h2>
+
+<div class="chestionar">
+  <form action="/rezultat-chestionar" method="POST">
+    <% intrebari.forEach((intrebare, index) => { %>
+      <p><%= index + 1 %>. <%= intrebare.intrebare %></p>
+      <% intrebare.variante.forEach((varianta, idx) => { %>
+        <label>
+          <input type="radio" name="q<%= index %>" value="<%= idx %>"> <%= varianta %>
+        </label><br>
+        <% }); %>
+        <br>
+      <% }); %>
+    <button type="submit">Trimite</button>
+  </form>
+</div>

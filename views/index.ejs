@@ -1,0 +1,35 @@
+<% if(user) { %>
+    <h2>Bun venit <%= user  %>. Take a look.</h2>
+<% } else {%>
+    <div class="login-container">
+        <a href="autentificare">Autentificare</a>
+    </div>
+<% } %>
+
+<% if(!db) { %>
+    <form action="/creare-bd">
+        <button type="submit">Creare BD</button>
+    </form>
+
+    <form action="/inserare-bd">
+        <button type="submit">Încărcare BD*</button>
+    </form>
+<% } %>
+
+<% if(db) { %>
+    <div class="product-grid">
+        <% db.forEach(produs => { %>
+            <div class="product-card">
+                <div class="product-title"><%= produs.nume %></div>
+                <div class="product-price"><%= produs.pret %> RON</div>
+                
+                <% if(user) { %>
+                    <form action="/adaugare-cos" method="POST">
+                        <input type="hidden" name="idProdus" value="<%= produs.id %>">
+                        <button class="product-button" type="submit">Adaugă în coș</button>
+                    </form>
+                <% } %>
+            </div>        
+        <% }); %> 
+    </div>
+<% } %>

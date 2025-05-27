@@ -1,0 +1,28 @@
+{
+  "name": "proiect-2-teodorjireada",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/HDR-2024-2025/proiect-2-TeodorJireada.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HDR-2024-2025/proiect-2-TeodorJireada/issues"
+  },
+  "homepage": "https://github.com/HDR-2024-2025/proiect-2-TeodorJireada#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "sqlite3": "^5.1.7"
+  }
+}

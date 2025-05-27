@@ -1,0 +1,18 @@
+<table id="cart">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nume produs</th>
+            <th>Preț</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% cos.forEach(produs => { %>
+            <tr>
+                <td> <%= produs.id %> </td>
+                <td> <%= produs.nume %> </td>
+                <td> <%= produs.pret %> </td>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Typography */
+@font-face {
+    font-family: 'Nothing';
+    src: url('/nothing.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Nothing', Arial;
+    background-color: #000;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: color 0.3s;
+    color: #f40000;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.topbar .actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #111;
+    border-bottom: 1px solid #343434;
+    padding: 1rem 2rem;
+    height: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    color: #f40000;
+}
+
+.login-container {
+    border: 1px solid #333;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    max-width: 300px;
+    margin: 3rem auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#login-page {
+    max-width: 600px;
+}
+
+#login-form {
+    line-height: 1.5;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.25);
+}
+
+button {
+    background-color: black;
+    border: 1px solid #f40000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Nothing', sans-serif;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: #f40000;
+    color: #fff;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    background-color: #111;
+    color: #fff;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #343434;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: #f40000;
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+footer {
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="real"] {
+    height: 1.5rem;
+}
+
+#admin-add-product {
+    max-width: 600px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.25);
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f4f4f4;
+}
+
+.product-price {
+  color: #f40000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.product-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #f40000;
+  color: #f40000;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.product-button:hover {
+  background-color: #f40000;
+  color: #111;
+}
+
+.chestionar {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    line-height: 150%;
+    max-width: 1000px;
+}
